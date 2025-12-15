@@ -26,8 +26,14 @@
 					<li><a href="#">Nav Link 6</a></li>
 					<li><a href="#">Nav Link 7</a></li>
 					<!-- Buttons for Task 3 and Task 4 should be placed here -->
-					
-				</ul>
+
+                    <!-- Button task 3 -->
+                    <li><button id="button" onclick="clicked()">Click me!</button></li>
+
+                    <!-- Button task 4 -->
+                    <li><button id="buttonChange" onclick="clickIt()">Clear</button></li>
+
+                </ul>
 			</div>
 		</div>
 		<div class="content">
@@ -62,15 +68,24 @@
 					<hr>
 
 					<h3>Task 1 - The Image</h3>
-					<img onClick = "functionName()" src="assets/img/compIcon.png" id="imageTask1"><br />
-					<button style="display:none" id="buttonTask1">Click Me</button>
+					<img onmouseover = "functionName()" src="assets/img/compIcon.png" id="imageTask1"><br />
+					<button onclick="Hide()" style="display:none" id="buttonTask1">Click Me</button>
 					<hr>
-										
+
 					<h3>Task 2 - The Table</h3>
 					<!-- Buttons for this task should be entered before the table tag. -->
-					
-					
-					<table class="table table-striped">
+
+                    <!-- Button to change red -->
+                    <button onclick=Red()>Table Red</button>
+
+                    <!-- Button to change blue -->
+                    <button onclick=Orange()>Table Orange</button>
+
+                    <!-- Button to change green -->
+                    <button onclick=Green()>Table Green</button>
+
+                    <!-- add id to table -->
+					<table id="Table" class="table table-striped">
 						<thead>
 							<tr>
 								<th>#</th>
@@ -110,25 +125,24 @@
 						</thead>
 						<tr>
 							<td>Name:</td>
-							<td><input type="text" name="fullName" placeholder="Enter your full name." id="fullName"></td>
+							<td><input onchange="FillName" type="text" name="fullName" placeholder="Enter your full name." id="fullName"></td>
 						</tr>
 						<tr>
 							<td>Address:</td>
-							<td><input type="text" name="address" placeholder="Enter your address." id="address"></td>
+							<td><input onchange="FillAddress" type="text" name="address" placeholder="Enter your address." id="address"></td>
 						</tr>
 						<tr>
 							<td>Phone:</td>
-							<td><input type="text" name="phone" placeholder="Enter your phone number." id="phone"></td>
+							<td><input onchange="FillPhone" type="text" name="phone" placeholder="Enter your phone number." id="phone"></td>
 						<tr>
 							<td>Email:</td>
-							<td><input type="text" name="email" placeholder="Enter your email address." id="email"></td>
+							<td><input onchange="FillEmail" type="text" name="email" placeholder="Enter your email address." id="email"></td>
 						</tr>
 						<tr>
 							<td colspan="2"><button>Submit</button></td>
 						</tr>
 					</table>
-					
-					
+
 				</div>
 				<div class="aside">
 					<h2>CAUTION</h2>

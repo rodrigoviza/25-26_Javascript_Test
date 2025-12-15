@@ -1,7 +1,11 @@
 /* Put code for the task below */
+
+/* To show the button */
 function functionName(){
-    document.getElementById('buttonTask1').addEventListener('mouseover', buttom);
+    document.getElementById("buttonTask1").style.display="";
 }
-function () {
-    document.getElementById("goodbye").style.visibility = "hidden";
+
+/* Disappear the image */
+function Hide(){
+    document.getElementById("imageTask1").style.display="none";
 }
